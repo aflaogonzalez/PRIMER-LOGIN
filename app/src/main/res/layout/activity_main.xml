@@ -9,16 +9,27 @@
     android:layout_height="match_parent"
     android:background="@color/gray"
     tools:context=".MainActivity">
-    
+
     <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/cuadroblanco"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/white"
         android:layout_margin="30dp"
+        android:background="@color/white"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/gray"
+            android:textSize="20dp"
+            android:text="La Tía Encanto SpA"
+            android:textAlignment="center"
+            android:textColor="@color/white"></TextView>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>
