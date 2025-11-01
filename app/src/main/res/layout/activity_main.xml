@@ -1,50 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:background="@color/gray"
+    android:gravity="center"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/cuadroblanco"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
 
-<androidx.appcompat.widget.LinearLayoutCompat
-    android:id="@+id/cuadroblanco"
-    android:layout_width="300dp"
-    android:layout_height="600dp"
-    android:orientation="vertical"
-    android:background="@color/white"
-    android:gravity="center"    >
+        <TextView
+            android:id="@+id/namepyme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:text="La Tía Encanto SpA"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/namepyme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="La Tía Encanto SpA"
-        android:background="@color/gray"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
 
-    <TextView
-        android:id="@+id/labelUsuario"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:autoSizeMinTextSize="@dimen/cardview_compat_inset_shadow"
-        android:text="Usuario"
-        android:textColor="@color/black"
-        android:textSize="18sp" />/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lineausuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
+            <EditText
+                android:id="@+id/usuariologin"
+                android:hint="Ingrese su usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-
-
-
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
