@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<!--Pantalla principal-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -10,6 +10,7 @@
     android:background="@color/gray"
     tools:context=".MainActivity">
 
+    <!--  Cuadro Blanco-->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/cuadroblanco"
         android:layout_width="0dp"
@@ -22,48 +23,91 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!--Nombre de la empresa-->
         <TextView
             android:id="@+id/namepyme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:background="@color/gray"
-            android:textSize="20sp"
             android:text="La Tía Encanto SpA"
             android:textAlignment="center"
-            android:textColor="@color/white">
-        </TextView>
+            android:textColor="@color/white"
+            android:textSize="20sp"></TextView>
 
+        <!--Columna de ingreso usuario-->
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:orientation="vertical"
-            >
-            <LinearLayout
+            android:orientation="vertical">
+
+            <!--Linea de usuario-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lineausername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
                 android:orientation="horizontal">
 
+                <!--Etiqueta usuario-->
                 <TextView
+                    android:id="@+id/labelUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Usuario:"
-                    android:textSize="18sp"
-                    android:textColor="@android:color/black" />
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
 
+                <!--Campo de texto usuario-->
                 <EditText
                     android:id="@+id/editTextUsername"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginStart="8dp"
+                    android:layout_weight="1"
                     android:hint="Ingrese su nombre"
                     android:inputType="text" />
-            </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--Linea de contraseña-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/lineapassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <!--Etiqueta contraseña-->
+                <TextView
+                    android:id="@+id/labelPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contraseña:"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+
+                <!--Campo de texto contraseña-->
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:hint="Ingrese su contraseña"
+                    android:inputType="textPassword" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>
+
+
     </androidx.appcompat.widget.LinearLayoutCompat>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
